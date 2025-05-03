@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.custom-hollow {
+    -webkit-text-stroke: 1px white;
+    /* 1px thickness, white color */
+}
