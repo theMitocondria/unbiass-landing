@@ -24,7 +24,6 @@ export default function WorldMap({
 
   const svgMap = map.getSVG({
     radius: 0.22,
-    color: theme === "#FFFFFF40",
     shape: "circle",
     backgroundColor: theme === "dark" ? "black" : "white",
   });
