@@ -15,8 +15,10 @@ import {
   MobileNavMenu,
 } from "./ui/resizable-navbar";
 import { useState } from "react";
+const formUrl = import.meta.env.VITE_FORM_URL;
 
 export function NavbarDemo() {
+  
   const navItems = [
     {
       name: "Features",
@@ -39,7 +41,7 @@ export function NavbarDemo() {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <NavbarButton variant="primary" onClick={()=>window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdTQxCo1LnQxyAXNFFl6IMQHKxYJPBkoFBWQcVwMW3mzEmR3w/viewform'}>Start Hiring</NavbarButton>
+            <NavbarButton variant="primary" onClick={()=>window.location.href = `${formUrl}`}>Start Hiring</NavbarButton>
           </div>
         </NavBody>
 
@@ -62,7 +64,7 @@ export function NavbarDemo() {
                 key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-neutral-600 dark:text-neutral-300"
+                className="relative text-neutral-600 "
               >
                 <span className="block">{item.name}</span>
               </a>
@@ -71,7 +73,7 @@ export function NavbarDemo() {
               <NavbarButton
                 onClick={() => {
                   setIsMobileMenuOpen(false)
-                  window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdTQxCo1LnQxyAXNFFl6IMQHKxYJPBkoFBWQcVwMW3mzEmR3w/viewform'
+                  window.location.href = `${formUrl}`
                 }}
                 variant="primary"
                 className="w-full"

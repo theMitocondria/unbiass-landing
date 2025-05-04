@@ -1,15 +1,17 @@
 "use client";
 import { Button } from "./ui/moving-borders";
 
+const blogUrl = import.meta.env.VITE_BLOG_URL
 export function MovingBorderDemo() {
   return (
     <div>
       <Button
         borderRadius="1.75rem"
-        className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+        className="bg-white text-black  border-neutral-200 "
       >
-        Cheat-Free Hiring with Unbiass — Now 98% Accurate   <a
-          href={'#contact'}
+        Cheat-Free Hiring with Unbiass — Now 98% Accurate   
+        <a
+          href={`${blogUrl}`}
         >
           <span className="pl-[12px] block text-[#4c52ff]">Read Now</span>
         </a>

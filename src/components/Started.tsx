@@ -1,11 +1,11 @@
 import WorldMap from "./ui/world-map";
-
+const formUrl = import.meta.env.VITE_FORM_URL
 export default function Started() {
     return (
-        <div className="px-[12vw] py-[12vh] " id="contact">
+        <div className="px-[5vw] py-[12vh] md:px-[12vw] md:py-[12vh] " id="contact">
             <div className="font-bold text-xl text-slate-600 mb-4">
                 Globally
-                <span className="text-5xl text-[#4c52ff] mx-4">UNBIASSED</span>
+                <span className="md:text-5xl text-3xl text-[#4c52ff] mx-4">UNBIASSED</span>
             </div>
             <div>
                 <p>Filtering resumes, or second-guessing who's cheating? </p>
@@ -15,8 +15,8 @@ export default function Started() {
             </div>
             <div className="my-8">
 
-                <button className="w-60 transform rounded-full border border-[#4c52ff] bg-white px-6 py-2 font-medium text-[#4c52ff] transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900 cursor-pointer"
-                onClick={()=>window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdTQxCo1LnQxyAXNFFl6IMQHKxYJPBkoFBWQcVwMW3mzEmR3w/viewform'}>
+                <button className="w-60 transform rounded-full border border-[#4c52ff] bg-white px-6 py-2 font-medium text-[#4c52ff] transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 cursor-pointer"
+                onClick={()=>window.location.href = `${formUrl}`}>
                     Get in touch
                 </button>
             </div>
