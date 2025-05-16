@@ -7,7 +7,7 @@ export function MovingBorderDemo() {
     <div>
       <Button
         borderRadius="1.75rem"
-        className="bg-white text-black  border-neutral-200 "
+        className="bg-white text-black h-[5vh]  border-neutral-200 "
       >
         Cheat-Free Hiring with Unbiass — Now 98% Accurate   
         <a

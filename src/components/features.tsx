@@ -63,7 +63,8 @@ export function FeaturesSectionDemo() {
   return (
     <div className="mt-[100px]" id="features">
       <div className="px-[12vw] ">
-        <h1 className="z-10 mt-[5vh] max-w-4xl text-2xl font-bold text-slate-700 md:text-2xl lg:text-4xl ">
+          <p className="mt-[5vh] text-sm font-medium text-[#4c52ff] mb-2">Build.With</p>
+        <h1 className="z-10 max-w-4xl text-2xl font-bold text-slate-700 md:text-2xl lg:text-4xl ">
           {"Technology. Testing. Trust."
             .split(" ")
             .map((word, index) => (

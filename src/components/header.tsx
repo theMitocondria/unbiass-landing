@@ -1,6 +1,7 @@
 "use client";
 import { FeaturesSectionDemo } from "./features";
 import Started from "./Started";
+import FeaturePage from "./temp";
 import { HeroSectionOne } from "./ui/herosection";
 
 import {
@@ -15,16 +16,20 @@ import {
   MobileNavMenu,
 } from "./ui/resizable-navbar";
 import { useState } from "react";
+
 const formUrl = import.meta.env.VITE_FORM_URL;
 
 export function NavbarDemo() {
-  
+
   const navItems = [
     {
       name: "Features",
       link: "#features",
     },
-
+    {
+      name: "Blog",
+      link: "#blog",
+    },
     {
       name: "Contact",
       link: "#contact",
@@ -34,14 +39,14 @@ export function NavbarDemo() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="relative w-full">
+    <div className=" w-full">
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <NavbarButton variant="primary" onClick={()=>window.location.href = `${formUrl}`}>Start Hiring</NavbarButton>
+            <NavbarButton variant="primary" onClick={() => window.location.href = `${formUrl}`}>Start Hiring</NavbarButton>
           </div>
         </NavBody>
 
@@ -85,9 +90,10 @@ export function NavbarDemo() {
         </MobileNav>
 
       </Navbar>
-     
+
       <HeroSectionOne />
       <FeaturesSectionDemo />
+      <FeaturePage />
       <Started />
       {/* Navbar */}
     </div>

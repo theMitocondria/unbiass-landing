@@ -236,6 +236,7 @@ export const NavbarLogo = () => {
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
       <img
+         loading="lazy"
         src="https://res.cloudinary.com/dejvlvhlp/image/upload/v1746244004/final_logo_adjusted-removebg-preview_x7x6kg.png"
         alt="logo"
         width={60}
