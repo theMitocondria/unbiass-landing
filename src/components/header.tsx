@@ -23,7 +23,7 @@ export function NavbarDemo() {
     },
     {
       name: "Contact",
-      link: "https://calendly.com/dhruvmehta382/30min",
+      link: "#footer",
     },
     {
       name: "Why Unbiass",

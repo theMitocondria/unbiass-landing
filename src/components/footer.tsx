@@ -2,9 +2,12 @@ import React from "react";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { RiTwitterXFill } from "react-icons/ri";
 import { FiLinkedin } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
+
 const Footer: React.FC = () => {
+    const navigate = useNavigate()
     return (
-        <footer className="px-[12vw] bg-gradient-to-b from-[#4c52ff]/90 to-[#4c52ff]/40 py-[2vh] text-white">
+        <footer className="px-[12vw] bg-gradient-to-b from-[#4c52ff]/90 to-[#4c52ff]/40 py-[2vh] text-white" id="footer">
             <div
             className="px-[4vw] rounded-lg pt-[8vh]"
             >
@@ -20,9 +23,9 @@ const Footer: React.FC = () => {
 
                 {/* Right side: Links + Info + Icons */}
                 <div className="flex flex-col items-start md:items-end space-y-2 text-sm">
-                <a href="/contact" className="hover:underline text-lg">Contact</a>
-                <a href="/about" className="hover:underline text-lg">About Us</a>
-                <a href="/why" className="hover:underline text-lg">Why Unbiass</a>
+                <a href="https://calendly.com/dhruvmehta382/30min" className="cursor-pointer hover:underline text-lg">Contact</a>
+                <p onClick ={ ()=> navigate('/about' ) } className=" cursor-pointer hover:underline text-lg">About Us</p>
+                <p onClick ={ ()=> navigate('/why' ) }  className=" cursor-pointer hover:underline text-lg">Why Unbiass</p>
                 <div className="flex space-x-4 mt-2">
                     <a href="mailto:contact.unbiass@gmail.com" aria-label="Email">
                     <MdOutlineMailOutline className="text-xl " />
