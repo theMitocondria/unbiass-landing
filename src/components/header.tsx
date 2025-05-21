@@ -1,8 +1,4 @@
 "use client";
-import { FeaturesSectionDemo } from "./features";
-import Started from "./Started";
-import FeaturePage from "./temp";
-import { HeroSectionOne } from "./ui/herosection";
 
 import {
   Navbar,
@@ -17,7 +13,6 @@ import {
 } from "./ui/resizable-navbar";
 import { useState } from "react";
 
-const formUrl = import.meta.env.VITE_FORM_URL;
 
 export function NavbarDemo() {
 
@@ -27,12 +22,16 @@ export function NavbarDemo() {
       link: "#features",
     },
     {
-      name: "Blog",
-      link: "#blog",
+      name: "Contact",
+      link: "https://calendly.com/dhruvmehta382/30min",
     },
     {
-      name: "Contact",
-      link: "#contact",
+      name: "Why Unbiass",
+      link: "/why",
+    },
+    {
+      name: "About Us",
+      link: "/about",
     }
   ];
 
@@ -43,10 +42,10 @@ export function NavbarDemo() {
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>
-          <NavbarLogo />
+          <NavbarLogo  />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <NavbarButton variant="primary" onClick={() => window.location.href = `${formUrl}`}>Start Hiring</NavbarButton>
+            <NavbarButton variant="primary" onClick={() => window.location.href = 'https://calendly.com/dhruvmehta382/30min' }>Start Hiring</NavbarButton>
           </div>
         </NavBody>
 
@@ -78,7 +77,7 @@ export function NavbarDemo() {
               <NavbarButton
                 onClick={() => {
                   setIsMobileMenuOpen(false)
-                  window.location.href = `${formUrl}`
+                  window.location.href = 'https://calendly.com/dhruvmehta382/30min'
                 }}
                 variant="primary"
                 className="w-full"
@@ -90,12 +89,6 @@ export function NavbarDemo() {
         </MobileNav>
 
       </Navbar>
-
-      <HeroSectionOne />
-      <FeaturesSectionDemo />
-      <FeaturePage />
-      <Started />
-      {/* Navbar */}
     </div>
   );
 }

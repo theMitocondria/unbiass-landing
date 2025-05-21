@@ -1,4 +1,3 @@
-const formUrl = import.meta.env.VITE_DEMO_URL
 export default function FeaturePage() {
     return (
         <div className="px-[12vw] mt-12 bg-white text-2xl font-bold text-slate-700 md:text-2xl lg:text-4xl  px-6 py-12">
@@ -14,7 +13,7 @@ export default function FeaturePage() {
 
                     <div className="mt-10">
                         <button className="w-60 transform rounded-full text-[2vh] border border-[#4c52ff] bg-white px-6 py-2 font-medium text-[#4c52ff] transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 cursor-pointer"
-                            onClick={() => window.location.href = `${formUrl}`}>
+                            onClick={() => window.location.href = 'https://calendly.com/dhruvmehta382/30min'}>
                             Book a Demo
                         </button>
                     </div>
@@ -25,7 +24,6 @@ export default function FeaturePage() {
                         <iframe
                             src="https://www.youtube.com/embed/jcJ06HzR5_M"
                             title="OA Demo Video"
-                            frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
                             className="w-full h-full"

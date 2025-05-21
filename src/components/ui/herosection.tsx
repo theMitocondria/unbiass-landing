@@ -1,8 +1,7 @@
 "use client";
 import { motion } from "motion/react";
 import { MovingBorderDemo } from "../button";
-const formUrl = import.meta.env.VITE_FORM_URL;
-const demoUrl = import.meta.env.VITE_DEMO_URL;
+
 export function HeroSectionOne() {
     return (
         <div className="my-12 px-[10vw] relative mx-auto my-auto md:min-h-screen flex flex-col items-center justify-center">
@@ -61,15 +60,14 @@ export function HeroSectionOne() {
                     className="relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4"
                 >
                     <button className="w-60 transform cursor-pointer rounded-full bg-[#4c52ff] px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#4c52ff] hover:border hover:border-[#4c52ff]"
-                        onClick={() => window.location.href = `${formUrl}`}>
+                        onClick={() => window.location.href = 'https://calendly.com/dhruvmehta382/30min'}>
                         Start Hiring
                     </button>
                     <button className="w-60 transform cursor-pointer rounded-full border border-[#4c52ff] bg-white px-6 py-2 font-medium text-[#4c52ff] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#4c52ff] hover:text-white "
-                        onClick={() => window.location.href = `${demoUrl}`}>
+                        onClick={() => window.location.href = 'https://calendly.com/dhruvmehta382/30min'}>
                         Book a Demo
                     </button>
                 </motion.div>
-
 
             </div>
         </div>//

@@ -1,12 +1,54 @@
-
-export default function Footer() {
+import React from "react";
+import { MdOutlineMailOutline } from "react-icons/md";
+import { RiTwitterXFill } from "react-icons/ri";
+import { FiLinkedin } from "react-icons/fi";
+const Footer: React.FC = () => {
     return (
-        <div className="flex items-center bg-[#4c52ff] opacity-70 h-[6vh]">
-            <p className="text-black font-[1000] text-4xl text-white text-shadow-white mx-auto " style={{
+        <footer className="px-[12vw] bg-gradient-to-b from-[#4c52ff]/90 to-[#4c52ff]/40 py-[2vh] text-white">
+            <div
+            className="px-[4vw] rounded-lg pt-[8vh]"
+            >
+            <div className="flex items-center justify-between">
+                {/* Left side: Logo + Description + Copyright */}
+                <div className="h-full">
+                <h2 className="text-4xl font-bold ">Unbiass</h2>
+                <p className=" mb-[4vh] text-lg">Hire Smarter. Hire Faster. Hire Without Bias</p>
+                <p  >New Delhi, India</p>
+                <p  >Mon - Sat: 9:00 AM – 6:00 PM IST</p>
+                <p className="text-sm" >© {new Date().getFullYear()} Unbiass. All rights reserved.</p>
+                </div>
+
+                {/* Right side: Links + Info + Icons */}
+                <div className="flex flex-col items-start md:items-end space-y-2 text-sm">
+                <a href="/contact" className="hover:underline text-lg">Contact</a>
+                <a href="/about" className="hover:underline text-lg">About Us</a>
+                <a href="/why" className="hover:underline text-lg">Why Unbiass</a>
+                <div className="flex space-x-4 mt-2">
+                    <a href="mailto:contact.unbiass@gmail.com" aria-label="Email">
+                    <MdOutlineMailOutline className="text-xl " />
+                    </a>
+                    <a href="https://twitter.com/meMitocondria" target="_blank" rel="noopener noreferrer" aria-label="X">
+                    <RiTwitterXFill className="text-xl" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/itzzdhruv/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <FiLinkedin className="text-xl " />
+                    </a>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div className="">
+            <div className="h-[300px] overflow-hidden">
+                <p className="text-black font-[1000] text-[280px] text-white text-shadow-white" style={{
                 color: 'transparent',
-                WebkitTextStroke: '1px white',
-    
-            }}>UNBIASS</p>
-        </div>
-    )
-}
+                WebkitTextStroke: '0.5px white',
+
+                }}>UNBIASS</p>
+            </div>
+            </div>
+        </footer>
+
+    );
+};
+
+export default Footer; 
