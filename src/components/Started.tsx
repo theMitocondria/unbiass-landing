@@ -5,7 +5,7 @@ const WorldMap = React.lazy(() => import("./ui/world-map"));
 
 export default function Started() {
     return (
-        <div className="px-[5vw] py-[12vh] md:px-[12vw] md:py-[12vh] " id="contact">
+        <div className=" px-[12vw] md:px-[12vw] md:py-[12vh] " id="contact">
            
             <div className="font-bold text-xl text-slate-600 mb-4">
                   <p className="text-sm font-medium text-[#4c52ff] mb-2">Remote.Unbiassed</p>

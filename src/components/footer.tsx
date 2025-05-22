@@ -41,8 +41,8 @@ const Footer: React.FC = () => {
             </div>
             </div>
             <div className="">
-            <div className="h-[300px] overflow-hidden">
-                <p className="text-black font-[1000] text-[280px] text-white text-shadow-white" style={{
+            <div className="md:h-[300px] h-[70px] overflow-hidden">
+                <p className="text-black font-[1000] text-[65px] md:text-[280px] text-white text-shadow-white" style={{
                 color: 'transparent',
                 WebkitTextStroke: '0.5px white',
 

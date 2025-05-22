@@ -11,11 +11,11 @@ export default function Why() {
         <div className="pt-[20vh] px-[12vw] flex items-center justify-center">
 
             <div className={`${videoPalette ? 'blur-sm' : ''}`}>
-                <div className="flex items-center justify-center">
+                <div className="flex  items-center justify-center">
                     <p className=" font-bold text-sm text-[#4c52ff]">Why Choose Unbiass</p>
                 </div>
                 <div className="flex items-center justify-center">
-                    <p className="text-6xl font-bold text-[#2e3541]">We Listen. We Build. We Evolve</p>
+                    <p className="text-6xl font-bold pl-[6vw] md:pl-0 text-[#2e3541]">We Listen. We Build. We Evolve.</p>
                 </div>
                 <div className="cursor-pointer m-[6vh] rounded-xl" onClick={handlePalettleVisibility}>
                     <img src={Image} className=" rounded-3xl mx-auto" />
@@ -102,7 +102,7 @@ export default function Why() {
 
                    
                 </section>
-                 <section className="py-16 px-4 md:px-8 text-center bg-gray-50 rounded-xl shadow-xl max-w-5xl mx-auto my-[8vh]">
+                 <section className="py-16 px-4 md:px-8 text-center md:bg-gray-50 rounded-xl md:shadow-xl max-w-5xl mx-auto my-[8vh]">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Fair , Cheat-Proof Hiring Awaits</h2>
                 <p className="text-lg text-gray-600 max-w-xl mx-auto leading-relaxed">
                     Unbiass delivers smarter technology, fairer outcomes, and better ROI than traditional hiring platforms. 
@@ -115,7 +115,7 @@ export default function Why() {
             </div>
 
             {
-                videoPalette ? <div className=" fixed top-[2w0vh] w-[52.5vw] h-[66vh]">
+                videoPalette ? <div className=" fixed top-[20vh] md:w-[52.5vw] md:h-[66vh]">
                     <div onClick={handlePalettleVisibility} className=" cursor-pointer px-2 flex items-center justify-end">
                         <p className="font-[600] text-[#2e3541] ">close</p>
                     </div>

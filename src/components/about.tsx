@@ -1,6 +1,6 @@
 const AboutPage = () => {
     return (
-        <div className="">
+        <div className="px-[2vw]">
             {/* Hero Section */}
             {/* Hero Section */}
             <section className="pt-[20vh] relative text-center py-16 px-4 md:px-8 bg-gradient-to-b from-[#f9f9ff] to-white">
@@ -124,7 +124,7 @@ const AboutPage = () => {
    
 
             {/* Call to Action */}
-            <section className="py-16 px-4 md:px-8 text-center bg-gray-50 rounded-xl shadow-xl max-w-5xl mx-auto my-[8vh]">
+            <section className="py-16 px-4 md:px-8 text-center md:bg-gray-50 rounded-xl md:shadow-xl max-w-5xl mx-auto my-[8vh]">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Fair , Cheat-Proof Hiring Awaits</h2>
                 <p className="text-lg text-gray-600 max-w-xl mx-auto leading-relaxed">
                     Unbiass delivers smarter technology, fairer outcomes, and better ROI than traditional hiring platforms. 
